@@ -1,0 +1,33 @@
+{
+    "valid_users" : {
+        "admin":"admin123",
+        "anu" : "welcome"
+    },
+    "login_cases" : [
+        {
+            "username": "admin",
+            "password": "admin123",
+            "expected" : true
+        },
+        {
+            "username" : "anu",
+            "password" : "welcome",
+            "expected" : true
+        },
+        {
+            "username" : "admin",
+            "password" : "admin",
+            "expected" : false
+        },
+        {
+            "username" : "guest",
+            "password" : "guest",
+            "expected" : false
+        },
+        {
+            "username" : "",
+            "password" : "",
+            "expected" : false
+        }
+    ]
+}
